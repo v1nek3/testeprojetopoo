@@ -1,0 +1,45 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+	
+	<h:form>
+    <p:growl id="growl" />
+ 
+    <h3 style="margin-top:0">Cadastrar Usuario</h3>
+    <p:panel id="pnl" header="Novo Usuario" style="margin-bottom:10px;">
+        <p:messages id="messages" />
+        <h:panelGrid columns="3" cellpadding="5">
+            <h:outputLabel for="firstname" value="Nome: *" />
+            <p:inputText id="firstname" value="#{blockUIView.firstname}" required="true" label="Firstname">
+                <f:validateLength minimum="2" />
+            </p:inputText>
+            <p:message for="firstname" />
+ 
+            <h:outputLabel for="login" value="Login: *" />
+            <p:inputText id="login" required="true" label="Login"/>
+            <p:message for="login" />
+            
+            <h:outputLabel for="senha" value="Senha: *" />
+            <p:inputText id="Senha" required="true" label="Senha"/>
+            <p:message for="senha" />
+            
+             <h:outputLabel for="email" value="Email: *" />
+            <p:inputText id="Email" required="true" label="Email"/>
+            <p:message for="email" />
+            
+             <h:outputLabel for="cpf" value="CPF: *" />
+            <p:inputText id="Cpf" required="true" label="Cpf"/>
+            <p:message for="cpf" />            
+            
+        </h:panelGrid>
+ 
+        <p:commandButton id="saveBtn" value="Save" icon="ui-icon-check" style="margin:0" update="growl"/>
+    </p:panel>
+    
+    </h:form>
+	
+	
+	
+	</h:html>
