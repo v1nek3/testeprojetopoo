@@ -18,9 +18,9 @@
 	  <p:panel id="pnl" header="#{msg['pages.cadastroCampeonato.menu']}"  style="border-color:black;border-width:2px; border-style:solid; ">
 	  <h:form id="formCampeonato">	
 	  <p:panelGrid columns="2">          
-      <p:outputLabel  value="#{msg['pages.cadastroCampeonato.nome']}" /> 
+      <p:outputLabel value="#{msg['pages.cadastroCampeonato.nome']}" /> 
       <p:inputText/>
-	  <p:outputLabel  value="#{msg['pages.cadastroCampeonato.databegin']}" /> 
+	  <p:outputLabel value="#{msg['pages.cadastroCampeonato.databegin']}" /> 
 	  <p:calendar id="button1" showOn="button" />
 	  <p:outputLabel  value="#{msg['pages.cadastroCampeonato.dataend']}" /> 
 	  <p:calendar id="button2" showOn="button" />
@@ -28,7 +28,11 @@
 	  <p:calendar id="button3" showOn="button" />
 	  <p:outputLabel value="#{msg['pages.cadastroCampeonato.inscend']}" />
 	  <p:calendar id="button4" showOn="button" />
-	  <p:outputLabel   value="Taxa de Inscrição: " />
+	  <p:outputLabel value="#{msg['pages.cadastroCampeonato.jogadores_min']}" /> 
+      <p:inputText/>
+      <p:outputLabel value="#{msg['pages.cadastroCampeonato.jogadores_max']}" /> 
+      <p:inputText/>
+	  <p:outputLabel value="#{msg['pages.cadastroCampeonato.taxa']}" />
 	   <p:spinner id="prefix" value="0" prefix="$" min="0" />
                  
 	  </p:panelGrid>

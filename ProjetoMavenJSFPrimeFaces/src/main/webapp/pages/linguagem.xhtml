@@ -14,7 +14,7 @@
 	
 
 	<ui:define name="principal">
-	 	 
+	 	 <p:panel id="pnl" header="#{msg['pages.linguagem.menu']}"  style="border-color:black;border-width:2px; border-style:solid; ">
 	   	 <h:form >
             <p:outputLabel value="#{msg['pages.linguagem.lingua']} "/>
             
@@ -23,6 +23,7 @@
                 <f:selectItem itemValue="pt" itemLabel="Português" />
             </p:selectOneMenu>
         </h:form>
+        </p:panel>
 	   
 	</ui:define>
 </ui:composition>

@@ -7,10 +7,10 @@
 	<meta charset="UTF-8" />
 </h:head>
 <h:body>
-		  <p:growl id="growl" />   
-                          						
+		  <p:growl id="growl"/>
+          <p:panel id="pnl" header="Sistema Cruzeirão"  style="border-color:black;border-width:2px; border-style:solid; width:400px; margin-left:auto; margin-right:auto;">                						
  		  <h:form style="float:center" id="login" prependId="false">
-						 <p:panel id="pnl" header="Sistema Cruzeirão"  style="border-color:black;border-width:2px; border-style:solid; width:400px; margin-left:auto; margin-right:auto;">
+						 
 						<p:messages id="messages" />
 						<h:panelGrid columns="1" cellpadding="2" id="panel" style="margin:1%; text-align: center">
                             
@@ -24,19 +24,26 @@
 								
 					       
 						    <p:messages style="float:center" showDetail="true"/>
-						    <p:captcha label="Captcha" />  							
-
+						    <p:captcha language="pt-br" label="Captcha"/>  							
+							 
 							<p:commandButton value="Login" action="/pages/inicio.xhtml?faces-redirect=true"
 							    style="width: 50%; max-width: 200px;" />
 							    
-							     <p:commandButton value="Cadastrar" action="/pages/cadastroUsuario.xhtml?faces-redirect=true" ajax="false"
-							    style="width: 50%; max-width: 200px;" /> 
 						</h:panelGrid>
-						</p:panel>
+						
+						
 					</h:form>
+					
+					<h:form  style="float:center" id="login2" prependId="false">
+						<div align="center">
+							     <p:commandButton value="Cadastrar" action="/pages/cadastroUsuario.xhtml?faces-redirect=true" ajax="false"
+							    style="width: 50%; max-width: 200px;"/>
+						</div>
+					</h:form>
+					</p:panel>
+		
 					 
                    <p:blockUI block="pnl" />
-            
 
 </h:body>
 </html>
