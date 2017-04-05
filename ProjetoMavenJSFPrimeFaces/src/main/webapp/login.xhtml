@@ -7,11 +7,6 @@
 	<meta charset="UTF-8" />
 </h:head>
 <h:body>
-
-          <f:metadata>
-			<f:event listener="#{loginBean.preRender}"
-				type="preRenderView" />
-		  </f:metadata>
 		
           <div align="center">
             <p:outputLabel value="Sistema Cruzeirão"/>
@@ -32,11 +27,11 @@
 								<p:watermark for="password" value="Senha" />
 							</p:password>
 
-							<p:commandButton value="Login" action="#{loginBean.login}" ajax="false"
+							<p:commandButton value="Login" action="/pages/inicio.xhtml?faces-redirect=true"
 							    style="width: 50%; max-width: 200px;" />
 							    
-							    <p:commandButton value="Cadastrar" action="/cadastroUsuario.xhtml"
-							    style="width: 50%; max-width: 200px;" />
+							     <p:commandButton value="Cadastrar" action="/pages/cadastroUsuario.xhtml?faces-redirect=true" ajax="false"
+							    style="width: 50%; max-width: 200px;" /> 
 						</h:panelGrid>
 					</h:form>
               </div>

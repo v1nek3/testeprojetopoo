@@ -6,40 +6,37 @@
 	
 	<h:form>
     <p:growl id="growl" />
- 
+    
+	<div align="center">
     <h3 style="margin-top:0">Cadastrar Usuario</h3>
+    
     <p:panel id="pnl" header="Novo Usuario" style="margin-bottom:10px;">
         <p:messages id="messages" />
-        <h:panelGrid columns="3" cellpadding="5">
-            <h:outputLabel for="firstname" value="Nome: *" />
-            <p:inputText id="firstname" value="#{blockUIView.firstname}" required="true" label="Firstname">
+        <h:panelGrid columns="2" cellpadding="5">
+            <h:outputLabel value="Nome: *" />
+            <p:inputText id="firstname" required="true" label="Firstname">
                 <f:validateLength minimum="2" />
             </p:inputText>
-            <p:message for="firstname" />
  
-            <h:outputLabel for="login" value="Login: *" />
+            <h:outputLabel value="Login: *" />
             <p:inputText id="login" required="true" label="Login"/>
-            <p:message for="login" />
-            
-            <h:outputLabel for="senha" value="Senha: *" />
+           
+            <h:outputLabel value="Senha: *" />
             <p:inputText id="Senha" required="true" label="Senha"/>
-            <p:message for="senha" />
             
-             <h:outputLabel for="email" value="Email: *" />
+             <h:outputLabel value="Email: *" />
             <p:inputText id="Email" required="true" label="Email"/>
-            <p:message for="email" />
             
-             <h:outputLabel for="cpf" value="CPF: *" />
-            <p:inputText id="Cpf" required="true" label="Cpf"/>
-            <p:message for="cpf" />            
+             <h:outputLabel value="CPF: *" />
+            <p:inputText id="Cpf" required="true" label="Cpf"/>          
             
         </h:panelGrid>
  
-        <p:commandButton id="saveBtn" value="Save" icon="ui-icon-check" style="margin:0" update="growl"/>
+        <p:commandButton id="saveBtn" value="Save" icon="ui-icon-check" style="margin:0" update="growl" 
+        action="/login.xhtml?faces-redirect=true"/>
     </p:panel>
+    </div>
     
     </h:form>
 	
-	
-	
-	</h:html>
+	</ui:composition>

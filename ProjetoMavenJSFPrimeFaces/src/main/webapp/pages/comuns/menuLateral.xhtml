@@ -7,13 +7,21 @@
 	<h:form >
     <p:growl id="messages" showDetail="true"/>
  
-    <p:slideMenu style="height: 450px">      
-        <p:submenu  label="Cadastro" icon="ui-icon-newwin">
-            <p:menuitem value="#{msg['pages.cadastroTime.menu']}" url="cadastroTime.xhtml" ajax="false" icon="ui-icon-close"/>
-            <p:menuitem   value="#{msg['pages.cadastroCampeonato.menu']}" url="cadastroCampeonato.xhtml" ajax="false" icon="ui-icon-close"/>
-        </p:submenu>       
-        <p:submenu label="Opções" icon="ui-icon-extlink">           
-            <p:menuitem  value="#{msg['pages.linguagem.menu']}" url="linguagem.xhtml" />
+    <p:slideMenu style="height: 350px">
+        <p:submenu label="#{msg['pages.comuns.menuLateral.cadastro']}" icon="ui-icon-newwin">
+            <p:menuitem value="#{msg['pages.cadastroTime.menu']}" url="cadastroTime.xhtml" ajax="false" 
+            icon="ui-icon-close"/>
+            <p:menuitem value="#{msg['pages.cadastroCampeonato.menu']}" url="cadastroCampeonato.xhtml" 
+            ajax="false" icon="ui-icon-close"/>
+        </p:submenu>
+        <p:submenu label="#{msg['pages.comuns.menuLateral.jogos']}" icon="ui-icon-newwin">
+            <p:menuitem value="#{msg['pages.chave.menu']}" url="chave.xhtml" ajax="false" 
+            icon="ui-icon-close"/>
+            <p:menuitem value="#{msg['pages.resultados.menu']}" url="resultados.xhtml" 
+            ajax="false" icon="ui-icon-close"/>
+        </p:submenu>
+        <p:submenu label="#{msg['pages.comuns.menuLateral.options']}" icon="ui-icon-extlink">           
+            <p:menuitem value="#{msg['pages.linguagem.menu']}" url="linguagem.xhtml" />
         </p:submenu>
     </p:slideMenu>
     
