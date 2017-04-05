@@ -21,10 +21,10 @@
 	  <p:panelGrid columns="2">
       <p:outputLabel value="#{msg['pages.cadastroCampeonato.nome']}" />
       <p:inputText/>
-	  <p:outputLabel value="#{msg['pages.cadastroCampeonato.databegin']}" />
-	  <p:inputText/>
-	  <p:outputLabel value="#{msg['pages.cadastroCampeonato.dataend']}" />
-	  <p:inputText/>
+	  <p:outputLabel  value="#{msg['pages.cadastroCampeonato.databegin']}" /> 
+	  <p:calendar id="button" value="#{calendarView.date3}" showOn="button" />
+	  <p:outputLabel  value="#{msg['pages.cadastroCampeonato.dataend']}" /> 
+	  <p:calendar id="button1" value="#{calendarView.date4}" showOn="button" />
 	  <p:outputLabel value="#{msg['pages.cadastroCampeonato.inscbegin']}" />
 	  <p:inputText/>
 	  <p:outputLabel value="#{msg['pages.cadastroCampeonato.inscend']}" />
