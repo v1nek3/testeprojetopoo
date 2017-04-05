@@ -2,18 +2,13 @@ package sistema.modelos;
 
 import java.util.ArrayList;
 
-import sistema.papeis.Diretor;
-import sistema.papeis.Jogador;
-import sistema.papeis.Massagista;
-import sistema.papeis.Tecnico;
-
 public class Time {
 	
 	private String nome;
-	private ArrayList<Jogador> jogadores = new ArrayList<Jogador>();
-	private Tecnico tecnico;
-	private Diretor diretor;
-	private Massagista massagista;
+	private ArrayList<Usuario> jogadores = new ArrayList<Usuario>();
+	private Usuario tecnico;
+	private Usuario diretor;
+	private Usuario massagista;
 	
 	public String getNome() {
 		return nome;
@@ -21,28 +16,28 @@ public class Time {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public ArrayList<Jogador> getJogadores() {
+	public ArrayList<Usuario> getJogadores() {
 		return jogadores;
 	}
-	public void setJogadores(ArrayList<Jogador> jogadores) {
+	public void setJogadores(ArrayList<Usuario> jogadores) {
 		this.jogadores = jogadores;
 	}
-	public Tecnico getTecnico() {
+	public Usuario getTecnico() {
 		return tecnico;
 	}
-	public void setTecnico(Tecnico tecnico) {
+	public void setTecnico(Usuario tecnico) {
 		this.tecnico = tecnico;
 	}
-	public Diretor getDiretor() {
+	public Usuario getDiretor() {
 		return diretor;
 	}
-	public void setDiretor(Diretor diretor) {
+	public void setDiretor(Usuario diretor) {
 		this.diretor = diretor;
 	}
-	public Massagista getMassagista() {
+	public Usuario getMassagista() {
 		return massagista;
 	}
-	public void setMassagista(Massagista massagista) {
+	public void setMassagista(Usuario massagista) {
 		this.massagista = massagista;
 	}
 }
