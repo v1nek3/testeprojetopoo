@@ -28,6 +28,9 @@
 	  <p:calendar id="button3" showOn="button" />
 	  <p:outputLabel value="#{msg['pages.cadastroCampeonato.inscend']}" />
 	  <p:calendar id="button4" showOn="button" />
+	  <p:outputLabel   value="Taxa de Inscrição: " />
+	   <p:spinner id="prefix" value="0" prefix="$" min="0" />
+                 
 	  </p:panelGrid>
 	  <p:commandButton value="#{msg['pages.cadastroCampeonato.btnSalvar']}"
 	                 update=":formCampeonato"
@@ -35,9 +38,7 @@
 	                 ajax="false"
 	                 />
 	                 </h:form>
-	                 </p:panel>
-       
-	
+	                 </p:panel>  
 	   
 	</ui:define>
 </ui:composition>

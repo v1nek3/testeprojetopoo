@@ -7,8 +7,7 @@
 	<meta charset="UTF-8" />
 </h:head>
 <h:body>
-	
-	
+		
     <p:growl id="growl" />
     <h:form style="float:center" id="cadastro" prependId="false">
 	<div align="center">   
@@ -34,20 +33,18 @@
              <h:outputLabel size="30" value="CPF: *" />
             <p:inputText id="Cpf" required="true" label="Cpf"/>  
             
-              <h:panelGrid columns="2" cellpadding="5">
-         
-        <h:outputLabel for="func" value="Função:" />
-        <p:selectCheckboxMenu id="func" label="Funções" multiple="true"
-                              filter="true" filterMatchMode="startsWith" panelStyle="width:250px">                              
-            <f:selectItems value="Jogador"/>
-            <f:selectItems value="Técnico"/>
-            <f:selectItems value="Diretor"/>
-            <f:selectItems value="Juiz"/>
-            <f:selectItems value="Preparador Fisico"/>
-            <f:selectItems value="Massagista"/>
-            <f:selectItems value="Organizador"/>            
-        </p:selectCheckboxMenu>
-    </h:panelGrid>      
+            <h:outputLabel for="func" value="Função:" />            
+              <p:selectCheckboxMenu id="func"  label="Funções">
+            <f:selectItem itemLabel="Jogador" itemValue="Jogador"/>
+            <f:selectItem itemLabel="Técnico" itemValue="Técnico"/>
+            <f:selectItem itemLabel="Diretor" itemValue="Diretor"/>
+            <f:selectItem itemLabel="Juiz" itemValue="Juiz"/>
+            <f:selectItem itemLabel="Preparador Fisico" itemValue="Preparador Fisico"/>
+            <f:selectItem itemLabel="Massagista" itemValue="Massagista"/>
+            <f:selectItem itemLabel="Organizador" itemValue="Organizador"/>
+              </p:selectCheckboxMenu>       
+         s
+              
             
         </h:panelGrid>
  
