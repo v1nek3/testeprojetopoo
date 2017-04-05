@@ -32,7 +32,22 @@
             <p:inputText id="Email" required="true" label="Email"/>
             
              <h:outputLabel size="30" value="CPF: *" />
-            <p:inputText id="Cpf" required="true" label="Cpf"/>          
+            <p:inputText id="Cpf" required="true" label="Cpf"/>  
+            
+              <h:panelGrid columns="2" cellpadding="5">
+         
+        <h:outputLabel for="func" value="Função:" />
+        <p:selectCheckboxMenu id="func" label="Funções" multiple="true"
+                              filter="true" filterMatchMode="startsWith" panelStyle="width:250px">                              
+            <f:selectItems value="Jogador"/>
+            <f:selectItems value="Técnico"/>
+            <f:selectItems value="Diretor"/>
+            <f:selectItems value="Juiz"/>
+            <f:selectItems value="Preparador Fisico"/>
+            <f:selectItems value="Massagista"/>
+            <f:selectItems value="Organizador"/>            
+        </p:selectCheckboxMenu>
+    </h:panelGrid>      
             
         </h:panelGrid>
  

@@ -13,28 +13,30 @@
 	</ui:define>
 	
 
-	<ui:define name="principal">
-	  
-	  <h1><p:outputLabel value="#{msg['pages.cadastroCampeonato.menu']}"/></h1>
-	  
+	<ui:define name="principal">	 
+	  	  	  
+	  <p:panel id="pnl" header="#{msg['pages.cadastroCampeonato.menu']}"  style="border-color:black;border-width:2px; border-style:solid; ">
 	  <h:form id="formCampeonato">	
-	  <p:panelGrid columns="2">
-      <p:outputLabel value="#{msg['pages.cadastroCampeonato.nome']}" />
+	  <p:panelGrid columns="2">          
+      <p:outputLabel  value="#{msg['pages.cadastroCampeonato.nome']}" /> 
       <p:inputText/>
 	  <p:outputLabel  value="#{msg['pages.cadastroCampeonato.databegin']}" /> 
-	  <p:calendar id="button" value="#{calendarView.date3}" showOn="button" />
+	  <p:calendar id="button1" showOn="button" />
 	  <p:outputLabel  value="#{msg['pages.cadastroCampeonato.dataend']}" /> 
-	  <p:calendar id="button1" value="#{calendarView.date4}" showOn="button" />
+	  <p:calendar id="button2" showOn="button" />
 	  <p:outputLabel value="#{msg['pages.cadastroCampeonato.inscbegin']}" />
-	  <p:inputText/>
+	  <p:calendar id="button3" showOn="button" />
 	  <p:outputLabel value="#{msg['pages.cadastroCampeonato.inscend']}" />
-	  <p:inputText/>
+	  <p:calendar id="button4" showOn="button" />
 	  </p:panelGrid>
 	  <p:commandButton value="#{msg['pages.cadastroCampeonato.btnSalvar']}"
 	                 update=":formCampeonato"
 	                 action="/pages/cadastroCategoria.xhtml?pages-redirect=true"
+	                 ajax="false"
 	                 />
-       </h:form>
+	                 </h:form>
+	                 </p:panel>
+       
 	
 	   
 	</ui:define>
