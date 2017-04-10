@@ -22,12 +22,12 @@
             <p:menuitem value="#{msg['pages.resultados.menu']}" url="resultados.xhtml" 
             ajax="false" />
         </p:submenu>
-        <p:submenu label="Listar" >           
-            <p:menuitem value="Listar Jogadores" url="listarJogadores.xhtml" />
-            <p:menuitem value="Listar Convites" url="listarConvites.xhtml" />
+        <p:submenu label="#{msg['pages.comuns.menuLateral.listar']}" >           
+            <p:menuitem value="#{msg['pages.listaJogadores.menu']}" url="listarJogadores.xhtml" />
+            <p:menuitem value="#{msg['pages.listaConvite.menu']}" url="listarConvites.xhtml" />
         </p:submenu>
-        <p:submenu label="Organização" >           
-            <p:menuitem value="Autorizar Inscrições" url="autorizacaoInscricao.xhtml" />
+        <p:submenu label="#{msg['pages.comuns.menuLateral.organizador']}" >           
+            <p:menuitem value="#{msg['pages.autorizaInsc.menu']}" url="autorizacaoInscricao.xhtml" />
         </p:submenu>
         
         <p:submenu label="#{msg['pages.comuns.menuLateral.options']}" >           
