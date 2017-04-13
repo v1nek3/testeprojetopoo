@@ -9,6 +9,7 @@ public class Jogo {
 	private Local local;
 	private Usuario arbitro;
 	private Relatorio relatorio;
+	private Jogo prox_jogo;
 	
 	public Date getData() {
 		return data;
@@ -46,6 +47,10 @@ public class Jogo {
 	public void setRelatorio(Relatorio relatorio) {
 		this.relatorio = relatorio;
 	}
-	
-	
+	public Jogo getProx_jogo() {
+		return prox_jogo;
+	}
+	public void setProx_jogo(Jogo prox_jogo) {
+		this.prox_jogo = prox_jogo;
+	}
 }

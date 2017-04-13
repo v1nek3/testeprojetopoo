@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Date;
 
 public class Campeonato {
-	private int id;
+	private int id_campeonato;
 	private String nome;
 	private ArrayList<Categoria> categorias = new ArrayList<Categoria>();
 	private Date data_inicio;
@@ -16,10 +16,10 @@ public class Campeonato {
 	private int jogadores_max;
 	
 	public int getId() {
-		return id;
+		return id_campeonato;
 	}
 	public void setId(int id) {
-		this.id = id;
+		this.id_campeonato = id;
 	}
 	public String getNome() {
 		return nome;

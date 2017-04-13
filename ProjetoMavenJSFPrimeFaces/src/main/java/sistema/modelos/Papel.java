@@ -1,14 +1,14 @@
 package sistema.modelos;
 
 public class Papel {
-	private int id;
+	private int id_papel;
 	private String nome;
 	
 	public int getId() {
-		return id;
+		return id_papel;
 	}
 	public void setId(int id) {
-		this.id = id;
+		this.id_papel = id;
 	}
 	public String getNome() {
 		return nome;

@@ -1,15 +1,15 @@
 package sistema.modelos;
 
 public class Local {
-	private int id;
+	private int id_local;
 	private String nome;
 	private String endereco;
 	
 	public int getId() {
-		return id;
+		return id_local;
 	}
 	public void setId(int id) {
-		this.id = id;
+		this.id_local = id;
 	}
 	public String getNome() {
 		return nome;

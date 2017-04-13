@@ -3,15 +3,15 @@ package sistema.modelos;
 import java.util.ArrayList;
 
 public class Usuario {
-	private int id;
+	private int id_usuario;
 	private String senha;
 	private ArrayList<Papel> papeis = new ArrayList<Papel>();
 	
 	public int getId() {
-		return id;
+		return id_usuario;
 	}
 	public void setId(int id) {
-		this.id = id;
+		this.id_usuario = id;
 	}
 	public String getSenha() {
 		return senha;

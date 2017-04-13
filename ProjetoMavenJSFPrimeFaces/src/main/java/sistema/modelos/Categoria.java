@@ -3,7 +3,7 @@ package sistema.modelos;
 import java.util.ArrayList;
 
 public class Categoria {
-	private int id;
+	private int id_categoria;
 	private String nome;
 	private int idade_min;
 	private char sexo;
@@ -13,10 +13,10 @@ public class Categoria {
 	private ArrayList<Jogo> partidas = new ArrayList<Jogo>();
 	
 	public int getId() {
-		return id;
+		return id_categoria;
 	}
 	public void setId(int id) {
-		this.id = id;
+		this.id_categoria = id;
 	}
 	public String getNome() {
 		return nome;

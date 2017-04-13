@@ -1,14 +1,10 @@
 package sistema.modelos;
 
-import java.util.ArrayList;
-
 public class Time {
-	
+	private int id_time;
 	private String nome;
-	private ArrayList<Usuario> jogadores = new ArrayList<Usuario>();
-	private Usuario tecnico;
 	private Usuario diretor;
-	private Usuario massagista;
+	private Inscricao inscricao;
 	
 	public String getNome() {
 		return nome;
@@ -16,28 +12,22 @@ public class Time {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public ArrayList<Usuario> getJogadores() {
-		return jogadores;
-	}
-	public void setJogadores(ArrayList<Usuario> jogadores) {
-		this.jogadores = jogadores;
-	}
-	public Usuario getTecnico() {
-		return tecnico;
-	}
-	public void setTecnico(Usuario tecnico) {
-		this.tecnico = tecnico;
-	}
 	public Usuario getDiretor() {
 		return diretor;
 	}
 	public void setDiretor(Usuario diretor) {
 		this.diretor = diretor;
 	}
-	public Usuario getMassagista() {
-		return massagista;
+	public int getId_time() {
+		return id_time;
 	}
-	public void setMassagista(Usuario massagista) {
-		this.massagista = massagista;
+	public void setId_time(int id_time) {
+		this.id_time = id_time;
+	}
+	public Inscricao getInscricao() {
+		return inscricao;
+	}
+	public void setInscricao(Inscricao inscricao) {
+		this.inscricao = inscricao;
 	}
 }
