@@ -76,7 +76,7 @@
 			<scope>compile</scope>
 		</dependency>
   
-  <!-- Spring Security 
+  <!-- Spring Security -->
 		<dependency>
 			<groupId>org.apache.taglibs</groupId>
 			<artifactId>taglibs-standard-jstlel</artifactId>
@@ -98,7 +98,7 @@
 			<version>${spring-security.version}</version>
 			<scope>test</scope>
 		</dependency>
-		-->
+		
 		<!-- Commons Logging -->
 		<dependency>
 			<groupId>commons-logging</groupId>

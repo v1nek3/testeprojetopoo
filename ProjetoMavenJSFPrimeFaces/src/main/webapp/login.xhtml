@@ -7,43 +7,47 @@
 	<meta charset="UTF-8" />
 </h:head>
 <h:body>
-		  <p:growl id="growl"/>
-          <p:panel id="pnl" header="Sistema Cruzeirão" style="border-color:black;border-width:2px; border-style:solid; width:400px; margin-left:auto; margin-right:auto;">                						
- 		  <h:form style="float:center" id="login" prependId="false">
-						 
-						<p:messages id="messages" />
-						<h:panelGrid columns="1" cellpadding="2" id="panel" style="margin:1%; text-align: center">
-                            
-                            <h:outputLabel value="Login" />
-							<p:inputText type="text" id="username" autocomplete="off" size="30"
-								maxlength="80" label="Usuário"/>							
-							
-							
-                            <h:outputLabel value="Senha" />
-							<p:password  size="30" id="password" value="Senha:" maxlength="20"/>
-								
-					       
-						    <p:messages style="float:center" showDetail="true"/>
-						    <p:captcha language="pt-br" label="Captcha"/>  							
-							 
-							<p:commandButton value="Login" action="/pages/inicio.xhtml?faces-redirect=true"
-							    style="width: 50%; max-width: 200px;" />
-							    
-						</h:panelGrid>
-						
-						
-					</h:form>
-					
-					<h:form  style="float:center" id="login2" prependId="false">
-						<div align="center">
-							     <p:commandButton value="Cadastrar" action="/pages/cadastroUsuario.xhtml?faces-redirect=true" ajax="false"
-							    style="width: 50%; max-width: 200px;"/>
-						</div>
-					</h:form>
-					</p:panel>
-		
-					 
-                   <p:blockUI block="pnl" />
+	<p:growl id="growl" />
+	<p:panel id="pnl" header="Sistema Cruzeirão"
+		style="border-color:black;border-width:2px; border-style:solid; width:400px; margin-left:auto; margin-right:auto;">
+		<h:form style="float:center" id="login" prependId="false">
+
+			<p:messages id="messages" />
+			<h:panelGrid columns="1" cellpadding="2" id="panel"
+				style="margin:1%; text-align: center">
+
+				<h:outputLabel value="Login" />
+				<p:inputText type="text" id="username" autocomplete="off" size="30"
+					maxlength="80" label="Usuário" />
+
+
+				<h:outputLabel value="Senha" />
+				<p:password size="30" id="password" value="Senha:" maxlength="20" />
+
+
+				<p:messages style="float:center" showDetail="true" />
+				<p:captcha language="pt-br" label="Captcha" />
+
+				<p:commandButton value="Login"
+					action="/pages/inicio.xhtml?faces-redirect=true"
+					style="width: 50%; max-width: 200px;" />
+
+			</h:panelGrid>
+
+
+		</h:form>
+
+		<h:form style="float:center" id="login2" prependId="false">
+			<div align="center">
+				<p:commandButton value="Cadastrar"
+					action="/pages/cadastroUsuario.xhtml?faces-redirect=true"
+					ajax="false" style="width: 50%; max-width: 200px;" />
+			</div>
+		</h:form>
+	</p:panel>
+
+
+	<p:blockUI block="pnl" />
 
 </h:body>
 </html>
